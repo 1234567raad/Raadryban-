@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>رعد ريبان | المحامي اليمني | تشريعات وقوانين</title>
+    <title>رعد ريبان | الموسوعة القانونية اليمنية</title>
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Google Fonts -->
@@ -46,14 +46,13 @@
             padding: 5rem 0;
         }
 
-        /* ========== شعار احترافي مع رمز ========== */
+        /* ========== شعار احترافي ========== */
         header {
             background: #ffffff;
             box-shadow: 0 8px 25px -12px rgba(0, 0, 0, 0.08);
             position: sticky;
             top: 0;
             z-index: 100;
-            backdrop-filter: blur(0px);
             border-bottom: 1px solid #f0e5db;
         }
 
@@ -66,7 +65,6 @@
             gap: 1rem;
         }
 
-        /* شعار احترافي: اسم + رمز مميز */
         .logo {
             display: flex;
             align-items: center;
@@ -79,7 +77,6 @@
         }
         .logo:hover {
             transform: scale(1.01);
-            box-shadow: 0 8px 20px rgba(139, 44, 29, 0.12);
         }
         .logo-icon {
             background-color: var(--primary);
@@ -89,35 +86,24 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .logo-icon i {
             font-size: 1.8rem;
             color: var(--secondary);
-            filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
         }
         .logo-text h1 {
             font-size: 1.6rem;
             font-weight: 800;
-            line-height: 1.2;
-            letter-spacing: -0.5px;
         }
         .logo-text h1 .first-name {
             color: var(--primary);
-            background: linear-gradient(135deg, var(--primary), var(--primary-light));
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
         }
         .logo-text h1 .last-name {
             color: var(--secondary-dark);
-            font-weight: 700;
         }
         .logo-text p {
             font-size: 0.7rem;
             color: #7c6e5e;
-            letter-spacing: 0.5px;
-            margin-top: 2px;
         }
 
         .nav-links {
@@ -130,7 +116,6 @@
             font-weight: 600;
             color: #2c3e50;
             transition: var(--transition);
-            font-size: 1rem;
         }
         .nav-links a:hover {
             color: var(--primary);
@@ -143,16 +128,13 @@
             text-decoration: none;
             font-weight: 700;
             transition: all 0.3s;
-            box-shadow: 0 2px 6px rgba(139,44,29,0.3);
-            border: none;
         }
         .btn-consult:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 20px -12px var(--primary);
             background: var(--primary-dark);
         }
 
-        /* hero */
+        /* Hero */
         .hero {
             background: linear-gradient(120deg, #fffef9 40%, #fef3e8 100%);
             padding: 2rem 0 3.5rem;
@@ -178,10 +160,9 @@
             color: var(--primary-dark);
             font-weight: 600;
             margin-bottom: 1rem;
-            font-size: 0.85rem;
         }
 
-        /* ========== أيقونات مستطيلة أعلى الموقع (صفوف) ========== */
+        /* أيقونات مستطيلة */
         .icons-section {
             background: white;
             padding: 2rem 0 1.8rem;
@@ -198,64 +179,83 @@
             border-bottom: 3px solid var(--secondary);
             padding-bottom: 0.4rem;
         }
-        
-        /* شبكة الأيقونات المستطيلة - تظهر في صفوف متعددة */
         .rect-icons-grid {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 1rem;
-            margin-top: 0.5rem;
         }
         .rect-icon-card {
             background: #ffffff;
             min-width: 130px;
-            flex: 0 0 auto;
             display: flex;
             align-items: center;
             gap: 0.7rem;
             padding: 0.7rem 1.2rem;
             border-radius: 60px;
             border: 1px solid #efe2d6;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
-            transition: all 0.25s ease;
             cursor: pointer;
+            transition: all 0.25s ease;
         }
         .rect-icon-card:hover {
             transform: translateY(-3px);
             border-color: var(--secondary);
-            box-shadow: 0 10px 18px -12px rgba(139,44,29,0.2);
             background: #fefaf5;
         }
         .rect-icon-card i {
             font-size: 1.6rem;
-            transition: 0.2s;
         }
         .rect-icon-card span {
             font-weight: 600;
             font-size: 0.85rem;
             color: #2d3e50;
-            white-space: nowrap;
         }
-        
-        /* شريط البحث */
-        .search-bar-wrapper {
-            max-width: 550px;
-            margin: 0 auto 2rem;
-            position: relative;
+
+        /* قسم تفصيلي لكل قانون - يظهر عند الضغط */
+        .law-detail-section {
+            padding: 3rem 0;
+            background: #ffffff;
+            border-bottom: 1px solid #f0e7df;
+            scroll-margin-top: 90px;
         }
-        #lawSearch {
-            width: 100%;
-            padding: 0.9rem 2.8rem 0.9rem 1rem;
-            border-radius: 60px;
-            border: 1px solid #e2e8f0;
-            font-family: 'Cairo', sans-serif;
-            font-size: 1rem;
+        .law-detail-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            border-right: 5px solid var(--primary);
+            padding-right: 1.2rem;
         }
+        .law-detail-header i {
+            font-size: 2.5rem;
+        }
+        .law-detail-header h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+        .law-full-description {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #2d3e50;
+            background: #fefbf8;
+            padding: 1.5rem;
+            border-radius: 24px;
+            margin-top: 0.5rem;
+        }
+        .back-to-top {
+            display: inline-block;
+            margin-top: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* بطاقات القوانين العامة */
         .laws-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 2rem;
+            margin-top: 1rem;
         }
         .law-card {
             background: white;
@@ -270,51 +270,17 @@
             transform: translateY(-4px);
             border-color: var(--secondary);
         }
-        .law-card h3 i {
-            margin-left: 0.5rem;
-            font-size: 1.5rem;
-        }
         footer {
             background: #0f172a;
             color: #cbd5e1;
             text-align: center;
             padding: 2rem;
         }
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.7);
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-        }
-        .modal-content {
-            background: white;
-            max-width: 500px;
-            width: 90%;
-            border-radius: 2rem;
-            padding: 2rem;
-            position: relative;
-        }
-        .close-modal {
-            position: absolute;
-            left: 1rem;
-            top: 1rem;
-            font-size: 1.8rem;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
         @media (max-width: 768px) {
             .navbar { flex-direction: column; }
-            .hero-grid { flex-direction: column-reverse; }
-            .rect-icon-card { min-width: 110px; padding: 0.5rem 1rem; }
-            .rect-icon-card span { font-size: 0.75rem; white-space: normal; text-align: center; }
-            .rect-icon-card { flex-direction: column; text-align: center; gap: 0.3rem; border-radius: 28px; min-width: 90px; }
+            .hero-grid { flex-direction: column-reverse; text-align: center; }
+            .rect-icon-card { min-width: 110px; padding: 0.5rem 1rem; flex-direction: column; gap: 0.3rem; border-radius: 28px; }
+            .law-detail-header h2 { font-size: 1.4rem; }
         }
     </style>
 </head>
@@ -323,22 +289,18 @@
 <header>
     <div class="container">
         <div class="navbar">
-            <!-- شعار احترافي اسم + رمز (ميزان القضاء) -->
             <div class="logo">
                 <div class="logo-icon">
                     <i class="fas fa-balance-scale"></i>
                 </div>
                 <div class="logo-text">
-                    <h1>
-                        <span class="first-name">رعد</span>
-                        <span class="last-name"> ريبان</span>
-                    </h1>
+                    <h1><span class="first-name">رعد</span> <span class="last-name">ريبان</span></h1>
                     <p>محامي واستشاري قانوني يمني</p>
                 </div>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#laws-detail">القوانين</a></li>
+                <li><a href="#laws-directory">القوانين</a></li>
                 <li><a href="#contact">اتصل بنا</a></li>
             </ul>
             <a href="#contact" class="btn-consult">استشارة فورية <i class="fas fa-arrow-left"></i></a>
@@ -352,67 +314,47 @@
             <div class="hero-content">
                 <div class="badge"><i class="fas fa-gavel"></i> ثقة وخبرة قانونية</div>
                 <h1>المحامي <span>رعد ريبان</span> <br>دفاع متكامل وفق القانون اليمني</h1>
-                <p>نضع بين يديك أحدث التشريعات والدستور والقوانين التجارية والأحوال الشخصية، مع دعم قانوني احترافي.</p>
-                <a href="#laws-detail" class="btn-consult" style="display:inline-block; margin-top:0.5rem;">استكشف القوانين <i class="fas fa-search"></i></a>
+                <p>نضع بين يديك أحدث التشريعات، اضغط على أي قانون لقراءة نصوصه التفصيلية وأحكامه.</p>
+                <a href="#laws-directory" class="btn-consult" style="display:inline-block;">استعرض القوانين <i class="fas fa-arrow-down"></i></a>
             </div>
             <div style="flex:0.6; text-align:center;">
                 <i class="fas fa-gavel" style="font-size: 5rem; color: var(--secondary); opacity:0.7;"></i>
-                <p style="font-size:0.8rem; margin-top:0.5rem;">#عدالة_وحقوق</p>
             </div>
         </div>
     </section>
 
-    <!-- أيقونات القوانين المستطيلة في صفوف أعلى الموقع -->
+    <!-- أيقونات مستطيلة سريعة (صفوف) -->
     <div class="icons-section">
         <div class="container">
             <div class="section-mini-title">
                 <h3><i class="fas fa-balance-scale"></i>  أبرز القوانين اليمنية</h3>
             </div>
-            <div class="rect-icons-grid" id="rectIconsGrid">
-                <!-- سيتم إنشاء أيقونات مستطيلة أفقية / صفوف -->
-            </div>
+            <div class="rect-icons-grid" id="rectIconsGrid"></div>
         </div>
     </div>
 
-    <!-- قسم القوانين مع خانة بحث -->
-    <section id="laws-detail">
+    <!-- دليل القوانين العام + أقسام تفصيلية منفصلة -->
+    <section id="laws-directory">
         <div class="container">
             <div class="section-mini-title">
                 <h3>موسوعة القوانين اليمنية</h3>
-            </div>
-            <div class="search-bar-wrapper">
-                <i class="fas fa-search" style="position:absolute; right:1rem; top:50%; transform:translateY(-50%); color:#a0aec0;"></i>
-                <input type="text" id="lawSearch" placeholder="ابحث عن قانون: دستور، مدني، تجاري، عمل، أحوال شخصية...">
+                <p>اختر القانون من القائمة أو اضغط على البطاقة لقراءة النص الكامل</p>
             </div>
             <div class="laws-grid" id="lawsGrid"></div>
         </div>
     </section>
 
-    <!-- نبذة عن المحامي -->
-    <section style="background: #fefaf5;">
-        <div class="container">
-            <div class="section-mini-title">
-                <h3>من هو المحامي رعد ريبان؟</h3>
-            </div>
-            <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: center;">
-                <div style="flex:1.5">
-                    <p style="font-size:1.05rem;">دكتوراه في القانون العام، عضو نقابة المحامين اليمنيين، مستشار قانوني معتمد لدى محاكم الاستئناف والمحكمة العليا. نتميز بالدقة والشفافية في جميع الاستشارات والمرافعات، مع سجل حافل في قضايا التحكيم التجاري والأحوال الشخصية.</p>
-                    <div style="margin-top:1rem;"><i class="fas fa-certificate" style="color:var(--primary);"></i> حاصل على جائزة التميز القانوني 2023</div>
-                </div>
-                <div><i class="fas fa-user-graduate" style="font-size: 5rem; color: var(--secondary);"></i></div>
-            </div>
-        </div>
-    </section>
+    <!-- هنا سيتم إضافة أقسام تفصيلية لكل قانون عند الضغط (ديناميكي) -->
+    <div id="law-details-container"></div>
 
-    <!-- قسم الاتصال -->
-    <section id="contact" class="contact-section" style="background:#ffffff;">
+    <section id="contact" style="background:#fefaf5; margin-top: 1rem;">
         <div class="container">
             <div class="section-mini-title">
-                <h3>تواصل مع مكتبنا</h3>
+                <h3>تواصل مع مكتب المحامي رعد ريبان</h3>
             </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap:2rem; background:#fefcf9; border-radius: 2rem; padding:2rem; box-shadow: var(--card-shadow);">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap:2rem; background:#ffffff; border-radius: 2rem; padding:2rem; box-shadow: var(--card-shadow);">
                 <div>
-                    <div style="margin:1rem 0;"><i class="fas fa-map-marker-alt" style="color:var(--primary); width:2rem;"></i> صنعاء - شارع التعاون، بجوار مجمع المحاكم</div>
+                    <div style="margin:1rem 0;"><i class="fas fa-map-marker-alt" style="color:var(--primary); width:2rem;"></i> صنعاء - شارع التعاون، مجمع المحاكم</div>
                     <div style="margin:1rem 0;"><i class="fas fa-phone-alt" style="color:var(--primary); width:2rem;"></i> +967 777 123 456</div>
                     <div style="margin:1rem 0;"><i class="fas fa-envelope" style="color:var(--primary); width:2rem;"></i> info@raadrayban.ye</div>
                     <div style="margin:1rem 0;"><i class="fab fa-whatsapp" style="color:var(--primary); width:2rem;"></i> +967 700 987 654</div>
@@ -420,7 +362,7 @@
                 <form id="contactForm">
                     <input type="text" placeholder="الاسم الكامل" required style="width:100%; padding:0.8rem; margin-bottom:1rem; border-radius:1rem; border:1px solid #e2e8f0;">
                     <input type="email" placeholder="البريد الإلكتروني" required style="width:100%; padding:0.8rem; margin-bottom:1rem; border-radius:1rem;">
-                    <textarea rows="3" placeholder="تفاصيل الاستشارة..." style="width:100%; padding:0.8rem; border-radius:1rem;"></textarea>
+                    <textarea rows="3" placeholder="نوع الاستشارة والقانون المطلوب..." style="width:100%; padding:0.8rem; border-radius:1rem;"></textarea>
                     <button type="submit" class="btn-consult" style="border:none; cursor:pointer;">إرسال الطلب</button>
                 </form>
             </div>
@@ -429,89 +371,106 @@
 </main>
 
 <footer>
-    <p>© 2026 المحامي رعد ريبان — جميع الحقوق محفوظة. تصميم احترافي لقانون اليمن.</p>
+    <p>© 2026 المحامي رعد ريبان — جميع الحقوق محفوظة. كل قسم قانوني مستقل بتفاصيل كاملة.</p>
 </footer>
 
-<div id="lawModal" class="modal">
-    <div class="modal-content">
-        <button class="close-modal" id="closeModalBtn">&times;</button>
-        <h3 id="modalTitle">عنوان القانون</h3>
-        <p id="modalDescription">تفاصيل القانون وأهميته في التشريع اليمني.</p>
-    </div>
-</div>
-
 <script>
+    // بيانات القوانين الكاملة
     const lawsData = [
-        { name: "دستور الجمهورية اليمنية", desc: "الوثيقة الأساسية التي تحدد النظام السياسي والاقتصادي والاجتماعي، وتكفل الحقوق والحريات العامة، وهو أعلى قانون نافذ في البلاد." },
-        { name: "القانون المدني", desc: "ينظم العلاقات الخاصة بين الأفراد، كالعقود والالتزامات وحقوق الملكية والتعويضات، وهو مرجع أساسي للمعاملات المدنية والمالية." },
-        { name: "قانون المرافعات والتنفيذ المدني", desc: "يحدد إجراءات التقاضي أمام المحاكم المدنية، وآليات رفع الدعاوى، والتنفيذ الجبري للأحكام." },
-        { name: "قانون الأحوال الشخصية", desc: "يشمل أحكام الزواج والطلاق والميراث والنفقة والحضانة والوصية، ويهتم بكل ما يتعلق بالأسرة اليمنية." },
-        { name: "قانون الجرائم والعقوبات", desc: "يُعنى بتجريم الأفعال المخالفة للقانون وتحديد العقوبات الجنائية كالسجن والغرامة، والإجراءات الجزائية العامة." },
-        { name: "قانون الإجراءات الجزائية", desc: "ينظم سير الدعوى الجزائية من التحقيق والمحاكمة والطعن، ويضمن حقوق المتهم والمجني عليه." },
-        { name: "قانون الإثبات", desc: "يحدد وسائل الإثبات المقبولة أمام القضاء كالكتابة والشهادة والقرائن، وكيفية إدارة الأدلة." },
-        { name: "قانون التحكيم وتعديلاته", desc: "ينظم التحكيم كوسيلة بديلة لحل النزاعات التجارية والمدنية خارج المحاكم، مع أحدث التعديلات لمواكبة الممارسات الدولية." },
-        { name: "القانون التجاري", desc: "يشمل الأعمال التجارية، والشركات التجارية، والأوراق التجارية، والإفلاس، والعلامات التجارية." },
-        { name: "قانون العمل", desc: "ينظم علاقات العمل بين العامل وصاحب العمل، ويحدد الحقوق والواجبات والأجور والإجازات وسلامة العمل وإنهاء الخدمة." }
+        { name: "دستور الجمهورية اليمنية", desc: "الوثيقة الأساسية التي تحدد النظام السياسي والاقتصادي والاجتماعي، وتكفل الحقوق والحريات العامة، وهو أعلى قانون نافذ في البلاد. يتضمن الدستور اليمني ١٥٩ مادة ويعد المرجع الأعلى لكافة القوانين.", fullDetail: "دستور اليمن يتكون من بابين: أساس النظام السياسي والحقوق والحريات، والسلطات العامة. تم تعديله في ٢٠٠١ و٢٠٠٩. ينص على مبدأ الفصل بين السلطات والتعددية السياسية." },
+        { name: "القانون المدني", desc: "ينظم العلاقات الخاصة بين الأفراد، كالعقود والالتزامات وحقوق الملكية والتعويضات، وهو مرجع أساسي للمعاملات المدنية والمالية.", fullDetail: "القانون المدني اليمني رقم ١٩ لسنة ١٩٩٢ ويشمل الأحكام العامة، الالتزامات، العقود المسماة، والملكية. يتكون من ١٢٩٩ مادة تغطي كل ما يتعلق بالمعاملات المالية والمدنية." },
+        { name: "قانون المرافعات والتنفيذ المدني", desc: "يحدد إجراءات التقاضي أمام المحاكم المدنية، وآليات رفع الدعاوى، والتنفيذ الجبري للأحكام.", fullDetail: "قانون رقم ٤٠ لسنة ٢٠٠٢ بشأن المرافعات المدنية، ينظم سير الدعوى من رفعها إلى الفصل فيها وطرق الطعن والتنفيذ." },
+        { name: "قانون الأحوال الشخصية", desc: "يشمل أحكام الزواج والطلاق والميراث والنفقة والحضانة والوصية، ويهتم بكل ما يتعلق بالأسرة اليمنية.", fullDetail: "صدر القانون رقم ٢٠ لسنة ١٩٩٢، ويستند إلى الشريعة الإسلامية. يحدد شروط الزواج، حقوق الزوجين، الطلاق، والميراث وفق أحكام الفقه الإسلامي." },
+        { name: "قانون الجرائم والعقوبات", desc: "يُعنى بتجريم الأفعال المخالفة للقانون وتحديد العقوبات الجنائية كالسجن والغرامة، والإجراءات الجزائية العامة.", fullDetail: "القانون رقم ١٢ لسنة ١٩٩٤ بشأن الجرائم والعقوبات، يتناول الجرائم الحدية والقصاص والتعزير، والعقوبات السالبة للحرية والغرامات." },
+        { name: "قانون الإجراءات الجزائية", desc: "ينظم سير الدعوى الجزائية من التحقيق والمحاكمة والطعن، ويضمن حقوق المتهم والمجني عليه.", fullDetail: "هذا القانون (رقم ١٣ لسنة ١٩٩٤) يضمن حماية حقوق الإنسان أثناء التحقيق والمحاكمة، ويحدد أدوار النيابة العامة والشرطة القضائية." },
+        { name: "قانون الإثبات", desc: "يحدد وسائل الإثبات المقبولة أمام القضاء كالكتابة والشهادة والقرائن، وكيفية إدارة الأدلة.", fullDetail: "قانون الإثبات اليمني رقم ٢١ لسنة ١٩٩٢، ينظم الإثبات في المواد المدنية والتجارية، ويشمل البينة الخطية وشهادة الشهود والخبرة." },
+        { name: "قانون التحكيم وتعديلاته", desc: "ينظم التحكيم كوسيلة بديلة لحل النزاعات التجارية والمدنية خارج المحاكم، مع أحدث التعديلات.", fullDetail: "صدر القانون رقم ٣٣ لسنة ١٩٩٧ وتعديلاته ٢٠٢٠، يتيح التحكيم الاختياري والإلزامي في عقود الاستثمار والشركات." },
+        { name: "القانون التجاري", desc: "يشمل الأعمال التجارية، والشركات التجارية، والأوراق التجارية، والإفلاس، والعلامات التجارية.", fullDetail: "القانون التجاري اليمني رقم ٣٢ لسنة ١٩٩١، ويعرف التاجر والأعمال التجارية، أحكام الشركات التجارية، الكمبيالات، والإفلاس." },
+        { name: "قانون العمل", desc: "ينظم علاقات العمل بين العامل وصاحب العمل، ويحدد الحقوق والواجبات والأجور والإجازات وسلامة العمل.", fullDetail: "القانون رقم ٥ لسنة ١٩٩٥ بشأن العمل، يحدد ساعات العمل، الأجور، الإجازات، عقود العمل، وتعويضات إصابات العمل." }
     ];
+
     const iconsList = ["fas fa-landmark","fas fa-file-contract","fas fa-gavel","fas fa-heart","fas fa-skull","fas fa-balance-scale","fas fa-file-signature","fas fa-handshake","fas fa-chart-line","fas fa-briefcase"];
     const colorsList = ["#8b2c1d","#2c6e2f","#1e4a76","#b4682d","#9c2e5f","#3b7c5e","#a15e2b","#4b5e7c","#b2472e","#5f5b8b"];
 
-    // إنشاء الأيقونات المستطيلة (صفوف) أعلى الموقع
+    // إنشاء الأيقونات المستطيلة
     const rectGrid = document.getElementById('rectIconsGrid');
+    const detailsContainer = document.getElementById('law-details-container');
+
+    // دالة عرض قسم تفصيلي لقانون معين (مستقل)
+    function renderLawDetailSection(law, index) {
+        // مسح أي قسم تفصيلي موجود سابقاً ثم إضافة القسم الجديد
+        detailsContainer.innerHTML = '';
+        const sectionDiv = document.createElement('section');
+        sectionDiv.className = 'law-detail-section';
+        sectionDiv.id = `law-detail-${index}`;
+        sectionDiv.style.scrollMarginTop = '80px';
+        const lawColor = colorsList[index % colorsList.length];
+        sectionDiv.innerHTML = `
+            <div class="container">
+                <div class="law-detail-header">
+                    <i class="${iconsList[index % iconsList.length]}" style="color:${lawColor}"></i>
+                    <h2>${law.name}</h2>
+                </div>
+                <div class="law-full-description">
+                    <p><strong>📜 نبذة شاملة:</strong> ${law.desc}</p>
+                    <p style="margin-top:1rem"><strong>⚖️ النص التفصيلي والحقوقي:</strong> ${law.fullDetail}</p>
+                    <p style="margin-top:1rem">يمكنكم التواصل مع المحامي رعد ريبان للحصول على استشارة قانونية دقيقة حول هذا القانون.</p>
+                </div>
+                <a href="#laws-directory" class="back-to-top"><i class="fas fa-arrow-up"></i> العودة إلى قائمة القوانين</a>
+            </div>
+        `;
+        detailsContainer.appendChild(sectionDiv);
+        // تمرير سلس إلى القسم الجديد
+        setTimeout(() => {
+            document.getElementById(`law-detail-${index}`).scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+    }
+
+    // بناء الأيقونات العلوية (كل أيقونة توجه للقسم التفصيلي المستقل)
     lawsData.forEach((law, idx) => {
         const rectCard = document.createElement('div');
         rectCard.className = 'rect-icon-card';
-        rectCard.innerHTML = `
-            <i class="${iconsList[idx % iconsList.length]}" style="color: ${colorsList[idx % colorsList.length]};"></i>
-            <span>${law.name}</span>
-        `;
-        rectCard.addEventListener('click', () => showModal(law.name, law.desc));
+        rectCard.innerHTML = `<i class="${iconsList[idx % iconsList.length]}" style="color:${colorsList[idx % colorsList.length]}"></i><span>${law.name}</span>`;
+        rectCard.addEventListener('click', (e) => {
+            e.preventDefault();
+            renderLawDetailSection(law, idx);
+        });
         rectGrid.appendChild(rectCard);
     });
 
-    // بناء بطاقات القوانين التفصيلية (أسفل البحث)
-    const lawsContainer = document.getElementById('lawsGrid');
-    function renderLaws(filter = "") {
-        lawsContainer.innerHTML = "";
-        const filtered = lawsData.filter(l => l.name.includes(filter) || l.desc.includes(filter));
-        if(filtered.length === 0) { lawsContainer.innerHTML = '<div style="grid-column:1/-1; text-align:center;">لا توجد نتائج</div>'; return; }
-        filtered.forEach((law, i) => {
-            const origIdx = lawsData.findIndex(l => l.name === law.name);
-            const card = document.createElement('div');
-            card.className = 'law-card';
-            card.innerHTML = `<h3><i class="${iconsList[origIdx % iconsList.length]}" style="color:${colorsList[origIdx % colorsList.length]}"></i> ${law.name}</h3><p>${law.desc.substring(0,100)}...</p><div class="law-footer" style="margin-top:1rem; border-top:1px solid #eee; padding-top:0.7rem;">🔍 اضغط للتفاصيل <i class="fas fa-arrow-left"></i></div>`;
-            card.onclick = () => showModal(law.name, law.desc);
-            lawsContainer.appendChild(card);
-        });
-    }
+    // بناء بطاقات القوانين (الضغط عليها يوجه للقسم التفصيلي)
+    const lawsGrid = document.getElementById('lawsGrid');
+    lawsData.forEach((law, idx) => {
+        const card = document.createElement('div');
+        card.className = 'law-card';
+        card.innerHTML = `
+            <h3><i class="${iconsList[idx % iconsList.length]}" style="color:${colorsList[idx % colorsList.length]}"></i> ${law.name}</h3>
+            <p>${law.desc.substring(0, 110)}...</p>
+            <div style="margin-top:1rem; border-top:1px solid #eee; padding-top:0.7rem; color:var(--primary); font-weight:500;">📖 اضغط لعرض النص الكامل للقانون <i class="fas fa-arrow-left"></i></div>
+        `;
+        card.addEventListener('click', () => renderLawDetailSection(law, idx));
+        lawsGrid.appendChild(card);
+    });
 
-    function showModal(title, descBase) {
-        let extended = descBase;
-        if(title.includes("تحكيم")) extended += " هذا القانون يُعد من أهم أدوات حل النزاعات التجارية في اليمن.";
-        if(title.includes("دستور")) extended += " يُعتبر المرجع الأعلى لجميع القوانين اليمنية.";
-        document.getElementById('modalTitle').innerText = title;
-        document.getElementById('modalDescription').innerText = extended + " يمكنك الاعتماد على المكتب القانوني لرعد ريبان في تفسيره وتطبيقه.";
-        document.getElementById('lawModal').style.display = 'flex';
-    }
+    // معالجة نموذج الاتصال
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('شكراً لتواصلك مع المحامي رعد ريبان، سيتم الرد عليكم قريباً.');
+        e.target.reset();
+    });
 
-    document.getElementById('lawSearch').addEventListener('input', (e) => renderLaws(e.target.value.trim()));
-    renderLaws("");
-
-    const modal = document.getElementById('lawModal');
-    document.getElementById('closeModalBtn').onclick = () => modal.style.display = 'none';
-    window.onclick = (e) => { if(e.target === modal) modal.style.display = 'none'; };
-    document.getElementById('contactForm').addEventListener('submit', (e) => { e.preventDefault(); alert('شكراً، سيتواصل معكم فريق المحامي رعد ريبان'); e.target.reset(); });
-
+    // روابط التنقل السلسة
     document.querySelectorAll('.nav-links a, .btn-consult[href^="#"]').forEach(link => {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
-            if(href && href.startsWith('#')) {
+            if (href && href.startsWith('#')) {
                 e.preventDefault();
-                const el = document.getElementById(href.substring(1));
-                if(el) el.scrollIntoView({ behavior: 'smooth' });
+                const targetId = href.substring(1);
+                const target = document.getElementById(targetId);
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
 </script>
 </body>
-    </html>
+</html>
