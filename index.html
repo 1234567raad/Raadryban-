@@ -1,143 +1,259 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>المحامي رعد ربيان</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المحامي رعد ربيان | استشارات قانونية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #d4af37;
+            --text: #1e2937;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Tahoma', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: #f8fafc;
+        }
 
-<style>
-body{
-margin:0;
-font-family:Tahoma,sans-serif;
-background:#f4f4f4;
-}
+        /* Navbar */
+        nav {
+            background: var(--primary);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav-content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
 
-header{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:80px 20px;
-}
+        /* Hero */
+        header {
+            background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.9)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 180px 20px 100px;
+        }
+        header h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+        header p {
+            font-size: 22px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
 
-header h1{
-font-size:48px;
-margin-bottom:10px;
-}
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 8px;
+            transition: all 0.3s;
+        }
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        .btn-call {
+            background: var(--accent);
+            color: black;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
 
-header p{
-font-size:20px;
-}
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 20px;
+        }
 
-.btn{
-display:inline-block;
-margin:10px;
-padding:12px 25px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-}
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: var(--primary);
+        }
 
-.whatsapp{
-background:#25D366;
-color:white;
-}
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        .card i {
+            font-size: 48px;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
 
-.call{
-background:#d4af37;
-color:black;
-}
+        /* Contact Form */
+        .contact-form {
+            max-width: 700px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 14px;
+            margin: 12px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+        }
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+        }
 
-section{
-max-width:1100px;
-margin:auto;
-padding:50px 20px;
-}
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-
-footer{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:20px;
-}
-</style>
+        @media (max-width: 768px) {
+            header h1 { font-size: 38px; }
+            header p { font-size: 18px; }
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-<h1>المحامي رعد ربيان</h1>
-<p>استشارات قانونية وتمثيل قضائي وصياغة العقود</p>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">رعد ربيان</div>
+            <div class="nav-links">
+                <a href="#">الرئيسية</a>
+                <a href="#services">الخدمات</a>
+                <a href="#about">عن المحامي</a>
+                <a href="#contact">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
 
-<a class="btn whatsapp" href="https://wa.me/967774754573">
-واتساب
-</a>
+    <!-- Hero -->
+    <header>
+        <h1>المحامي رعد ربيان</h1>
+        <p>استشارات قانونية متخصصة | تمثيل قضائي | صياغة عقود</p>
+        
+        <a href="https://wa.me/967774754573" class="btn btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> واتساب الآن
+        </a>
+        <a href="tel:+967774754573" class="btn btn-call">
+            <i class="fas fa-phone"></i> اتصال مباشر
+        </a>
+    </header>
 
-<a class="btn call" href="tel:+967774754573">
-اتصال مباشر
-</a>
-</header>
+    <!-- About -->
+    <section id="about">
+        <h2>نبذة عن المحامي</h2>
+        <p style="text-align:center; font-size:19px; max-width:800px; margin:auto;">
+            نقدم خدمات قانونية متكاملة باحترافية عالية وسرية تامة، مع خبرة واسعة في مختلف القضايا المدنية والتجارية والأحوال الشخصية. 
+            هدفنا هو حماية حقوقك وتحقيق أفضل النتائج.
+        </p>
+    </section>
 
-<section>
-<h2>نبذة عنا</h2>
-<p>
-نقدم خدمات قانونية متكاملة للأفراد والشركات، مع الالتزام
-بالمهنية والسرية والدفاع عن حقوق الموكلين وفق الأنظمة والقوانين.
-</p>
-</section>
+    <!-- Services -->
+    <section id="services" style="background:#f1f5f9;">
+        <h2>خدماتنا القانونية</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-balance-scale"></i>
+                <h3>الاستشارات القانونية</h3>
+                <p>استشارات متخصصة ودقيقة للأفراد والشركات.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-gavel"></i>
+                <h3>القضايا المدنية</h3>
+                <p>متابعة الدعاوى والمنازعات المدنية بكفاءة.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-handshake"></i>
+                <h3>القضايا التجارية</h3>
+                <p>صياغة العقود وحل النزاعات التجارية.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-family"></i>
+                <h3>الأحوال الشخصية</h3>
+                <p>قضايا الطلاق والمواريث والحضانة والوصايا.</p>
+            </div>
+        </div>
+    </section>
 
-<section>
-<h2>الخدمات القانونية</h2>
+    <!-- Contact -->
+    <section id="contact">
+        <h2>تواصل معنا</h2>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="الاسم الكامل" required>
+                <input type="tel" placeholder="رقم الجوال" required>
+                <input type="email" placeholder="البريد الإلكتروني">
+                <textarea rows="5" placeholder="تفاصيل الاستشارة أو الطلب..." required></textarea>
+                <button type="submit">إرسال الطلب</button>
+            </form>
+        </div>
 
-<div class="cards">
+        <p style="text-align:center; margin-top:30px;">
+            <strong>الهاتف:</strong> +967 774 754 573<br>
+            <strong>البريد:</strong> Rybanabwjwad@gmail.com<br>
+            <strong>الموقع:</strong> اليمن
+        </p>
+    </section>
 
-<div class="card">
-<h3>الاستشارات القانونية</h3>
-<p>استشارات قانونية متخصصة للأفراد والشركات.</p>
-</div>
-
-<div class="card">
-<h3>القضايا المدنية</h3>
-<p>متابعة الدعاوى والمنازعات المدنية.</p>
-</div>
-
-<div class="card">
-<h3>القضايا التجارية</h3>
-<p>صياغة العقود وحل النزاعات التجارية.</p>
-</div>
-
-<div class="card">
-<h3>الأحوال الشخصية</h3>
-<p>قضايا الأسرة والمواريث والوصايا.</p>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2>التواصل</h2>
-
-<p><strong>الهاتف:</strong> +967 774754573</p>
-<p><strong>البريد الإلكتروني:</strong> Rybanabwjwad@gmail.com</p>
-<p><strong>العنوان:</strong> اليمن</p>
-
-</section>
-
-<footer>
-© جميع الحقوق محفوظة للمحامي رعد ربيان
-</footer>
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة للمحامي رعد ربيان</p>
+    </footer>
 
 </body>
-  </html>
+                  </html>
