@@ -2,235 +2,36 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المحامي رعد ربيان | استشارات قانونية</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>أقسام القوانين اليمنية</title>
     <style>
-        :root {
-            --primary: #0f172a;
-            --accent: #d4af37;
-            --text: #1e2937;
-        }
-        
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Tahoma', 'Arial', sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background: #f8fafc;
-        }
-
-        nav {
-            background: var(--primary);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            padding: 15px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .nav-content {
-            max-width: 1200px;
-            margin: auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo { color: white; font-size: 24px; font-weight: bold; }
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 500;
-        }
-
-        header {
-            background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.9)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
-            color: white;
-            text-align: center;
-            padding: 180px 20px 100px;
-        }
-        header h1 { font-size: 52px; margin-bottom: 15px; }
-        header p { font-size: 22px; max-width: 700px; margin: 0 auto 30px; }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 32px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 8px;
-            transition: all 0.3s;
-        }
-        .btn-whatsapp { background: #25D366; color: white; }
-        .btn-call { background: var(--accent); color: black; }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-
-        section { max-width: 1200px; margin: auto; padding: 80px 20px; }
-        h2 { text-align: center; font-size: 36px; margin-bottom: 50px; color: var(--primary); }
-
-        /* Law Cards */
-        .laws-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
-        }
-        .law-card {
-            background: white;
-            padding: 30px 25px;
-            border-radius: 16px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s;
-            text-align: center;
-        }
-        .law-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-        }
-        .law-card i {
-            font-size: 42px;
-            color: var(--accent);
-            margin-bottom: 15px;
-        }
-        .law-card h3 {
-            margin: 15px 0;
-            color: var(--primary);
-        }
-        .download-btn {
-            background: var(--primary);
-            color: white;
-            padding: 10px 25px;
-            border-radius: 50px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        footer {
-            background: var(--primary);
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        @media (max-width: 768px) {
-            header h1 { font-size: 38px; }
-        }
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; background-color: #f4f4f4; }
+        header { background: #2c3e50; color: #fff; padding: 1rem; text-align: center; }
+        nav { margin: 20px 0; }
+        nav a { margin: 0 10px; text-decoration: none; color: #2c3e50; font-weight: bold; }
+        section { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <div class="nav-content">
-            <div class="logo">رعد ربيان</div>
-            <div class="nav-links">
-                <a href="#">الرئيسية</a>
-                <a href="#services">الخدمات</a>
-                <a href="#laws">القوانين</a>
-                <a href="#contact">اتصل بنا</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero -->
     <header>
-        <h1>المحامي رعد ربيان</h1>
-        <p>استشارات قانونية متخصصة | تمثيل قضائي | صياغة عقود</p>
-        <a href="https://wa.me/967774754573" class="btn btn-whatsapp" target="_blank">واتساب الآن</a>
-        <a href="tel:+967774754573" class="btn btn-call">اتصال مباشر</a>
+        <h1>الموسوعة القانونية اليمنية</h1>
     </header>
 
-    <!-- Services -->
-    <section id="services" style="background:#f1f5f9;">
-        <h2>خدماتنا القانونية</h2>
-        <div class="laws-grid"> <!-- نفس الـ grid السابق -->
-            <div class="law-card">
-                <i class="fas fa-balance-scale"></i>
-                <h3>الاستشارات القانونية</h3>
-                <p>استشارات متخصصة للأفراد والشركات.</p>
-            </div>
-            <div class="law-card">
-                <i class="fas fa-gavel"></i>
-                <h3>القضايا المدنية</h3>
-                <p>متابعة الدعاوى المدنية.</p>
-            </div>
-            <div class="law-card">
-                <i class="fas fa-handshake"></i>
-                <h3>القضايا التجارية</h3>
-                <p>صياغة العقود والنزاعات التجارية.</p>
-            </div>
-            <div class="law-card">
-                <i class="fas fa-family"></i>
-                <h3>الأحوال الشخصية</h3>
-                <p>قضايا الطلاق والمواريث.</p>
-            </div>
-        </div>
+    <nav>
+        <a href="#civil">القانون المدني</a>
+        <a href="#penal">قانون العقوبات</a>
+        <a href="#personal">الأحوال الشخصية</a>
+    </nav>
+
+    <section id="civil">
+        <h2>القانون المدني</h2>
+        <p>هنا ستوضع نصوص القانون المدني اليمني وتعديلاته.</p>
     </section>
 
-    <!-- مكتبة القوانين - القسم الجديد -->
-    <section id="laws">
-        <h2>مكتبة القوانين والأنظمة</h2>
-        <p style="text-align:center; margin-bottom:40px; font-size:19px;">
-            يمكنك تحميل النصوص القانونية والأنظمة المهمة بصيغة PDF
-        </p>
-        
-        <div class="laws-grid">
-
-            <!-- مثال 1 - غيّر المعلومات حسب الحاجة -->
-            <div class="law-card">
-                <i class="fas fa-file-pdf"></i>
-                <h3>نظام العقوبات اليمني</h3>
-                <p>القانون رقم (12) لسنة 1994</p>
-                <a href="قانون-العقوبات.pdf" class="download-btn" target="_blank">
-                    <i class="fas fa-download"></i> تحميل PDF
-                </a>
-            </div>
-
-            <!-- مثال 2 -->
-            <div class="law-card">
-                <i class="fas fa-file-pdf"></i>
-                <h3>نظام المرافعات المدنية</h3>
-                <p>القانون رقم (40) لسنة 2002</p>
-                <a href="مرافعات-مدنية.pdf" class="download-btn" target="_blank">
-                    <i class="fas fa-download"></i> تحميل PDF
-                </a>
-            </div>
-
-            <!-- مثال 3 -->
-            <div class="law-card">
-                <i class="fas fa-file-pdf"></i>
-                <h3>قانون الأحوال الشخصية</h3>
-                <p>القانون رقم (20) لسنة 1992</p>
-                <a href="احوال-شخصية.pdf" class="download-btn" target="_blank">
-                    <i class="fas fa-download"></i> تحميل PDF
-                </a>
-            </div>
-
-            <!-- أضف المزيد هنا بنفس الطريقة -->
-            
-        </div>
+    <section id="penal">
+        <h2>قانون العقوبات</h2>
+        <p>هنا ستوضع نصوص قانون العقوبات اليمني.</p>
     </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <h2>تواصل معنا</h2>
-        <div style="max-width:700px; margin:40px auto; background:white; padding:40px; border-radius:16px; box-shadow:0 5px 25px rgba(0,0,0,0.1);">
-            <form>
-                <input type="text" placeholder="الاسم الكامل" required style="width:100%; padding:14px; margin:12px 0; border:1px solid #ddd; border-radius:8px;">
-                <input type="tel" placeholder="رقم الجوال" required style="width:100%; padding:14px; margin:12px 0; border:1px solid #ddd; border-radius:8px;">
-                <textarea rows="5" placeholder="تفاصيل طلبك..." required style="width:100%; padding:14px; margin:12px 0; border:1px solid #ddd; border-radius:8px;"></textarea>
-                <button type="submit" style="background:var(--primary); color:white; border:none; padding:14px 40px; border-radius:50px; font-size:18px;">إرسال</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 جميع الحقوق محفوظة للمحامي رعد ربيان</p>
-    </footer>
 
 </body>
-    </html>
+</html>
