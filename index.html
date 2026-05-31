@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>رعد ريبان | الموسوعة القانونية اليمنية</title>
+    <title>رعد ريبان | رفع الكتب والملفات القانونية</title>
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Google Fonts -->
@@ -29,11 +29,8 @@
             --primary-light: #b54533;
             --secondary: #c49a6c;
             --secondary-dark: #a87b4a;
-            --accent: #2c3e50;
-            --light-bg: #ffffff;
-            --gold-light: #f9eedb;
             --card-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.08);
-            --transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            --transition: all 0.3s ease;
         }
 
         .container {
@@ -43,10 +40,10 @@
         }
 
         section {
-            padding: 5rem 0;
+            padding: 4rem 0;
         }
 
-        /* ========== شعار احترافي ========== */
+        /* Header */
         header {
             background: #ffffff;
             box-shadow: 0 8px 25px -12px rgba(0, 0, 0, 0.08);
@@ -72,12 +69,8 @@
             background: linear-gradient(135deg, #ffffff, #fef7f0);
             padding: 0.5rem 1.2rem;
             border-radius: 60px;
-            box-shadow: 0 4px 12px rgba(139, 44, 29, 0.08);
-            transition: var(--transition);
         }
-        .logo:hover {
-            transform: scale(1.01);
-        }
+
         .logo-icon {
             background-color: var(--primary);
             width: 48px;
@@ -87,20 +80,25 @@
             align-items: center;
             justify-content: center;
         }
+
         .logo-icon i {
             font-size: 1.8rem;
             color: var(--secondary);
         }
+
         .logo-text h1 {
             font-size: 1.6rem;
             font-weight: 800;
         }
+
         .logo-text h1 .first-name {
             color: var(--primary);
         }
+
         .logo-text h1 .last-name {
             color: var(--secondary-dark);
         }
+
         .logo-text p {
             font-size: 0.7rem;
             color: #7c6e5e;
@@ -111,15 +109,18 @@
             gap: 2rem;
             list-style: none;
         }
+
         .nav-links a {
             text-decoration: none;
             font-weight: 600;
             color: #2c3e50;
             transition: var(--transition);
         }
+
         .nav-links a:hover {
             color: var(--primary);
         }
+
         .btn-consult {
             background: linear-gradient(95deg, var(--primary), var(--primary-dark));
             color: white;
@@ -129,31 +130,35 @@
             font-weight: 700;
             transition: all 0.3s;
         }
+
         .btn-consult:hover {
             transform: translateY(-2px);
-            background: var(--primary-dark);
         }
 
         /* Hero */
         .hero {
             background: linear-gradient(120deg, #fffef9 40%, #fef3e8 100%);
-            padding: 2rem 0 3.5rem;
+            padding: 2rem 0 3rem;
         }
+
         .hero-grid {
             display: flex;
             align-items: center;
             gap: 2.5rem;
         }
+
         .hero-content h1 {
             font-size: 2.8rem;
             font-weight: 800;
             margin-bottom: 1rem;
         }
+
         .hero-content h1 span {
             color: var(--primary);
         }
+
         .badge {
-            background: var(--gold-light);
+            background: #f9eedb;
             display: inline-block;
             padding: 0.3rem 1.2rem;
             border-radius: 40px;
@@ -165,13 +170,15 @@
         /* أيقونات مستطيلة */
         .icons-section {
             background: white;
-            padding: 2rem 0 1.8rem;
+            padding: 2rem 0;
             border-bottom: 1px solid #f0e7df;
         }
+
         .section-mini-title {
             text-align: center;
             margin-bottom: 2rem;
         }
+
         .section-mini-title h3 {
             font-size: 1.6rem;
             color: var(--primary);
@@ -179,12 +186,14 @@
             border-bottom: 3px solid var(--secondary);
             padding-bottom: 0.4rem;
         }
+
         .rect-icons-grid {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 1rem;
         }
+
         .rect-icon-card {
             background: #ffffff;
             min-width: 130px;
@@ -197,66 +206,30 @@
             cursor: pointer;
             transition: all 0.25s ease;
         }
+
         .rect-icon-card:hover {
             transform: translateY(-3px);
             border-color: var(--secondary);
             background: #fefaf5;
         }
+
         .rect-icon-card i {
             font-size: 1.6rem;
         }
+
         .rect-icon-card span {
             font-weight: 600;
             font-size: 0.85rem;
-            color: #2d3e50;
         }
 
-        /* قسم تفصيلي لكل قانون - يظهر عند الضغط */
-        .law-detail-section {
-            padding: 3rem 0;
-            background: #ffffff;
-            border-bottom: 1px solid #f0e7df;
-            scroll-margin-top: 90px;
-        }
-        .law-detail-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            border-right: 5px solid var(--primary);
-            padding-right: 1.2rem;
-        }
-        .law-detail-header i {
-            font-size: 2.5rem;
-        }
-        .law-detail-header h2 {
-            font-size: 1.8rem;
-            color: var(--primary);
-        }
-        .law-full-description {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            color: #2d3e50;
-            background: #fefbf8;
-            padding: 1.5rem;
-            border-radius: 24px;
-            margin-top: 0.5rem;
-        }
-        .back-to-top {
-            display: inline-block;
-            margin-top: 1.5rem;
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        /* بطاقات القوانين العامة */
+        /* بطاقات القوانين */
         .laws-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 2rem;
             margin-top: 1rem;
         }
+
         .law-card {
             background: white;
             border-radius: 24px;
@@ -266,21 +239,167 @@
             transition: 0.2s;
             border: 1px solid #efe5dc;
         }
+
         .law-card:hover {
             transform: translateY(-4px);
             border-color: var(--secondary);
         }
+
+        /* قسم تفصيلي لكل قانون مع رفع الملفات */
+        .law-detail-section {
+            padding: 3rem 0;
+            background: #ffffff;
+            border-bottom: 1px solid #f0e7df;
+            scroll-margin-top: 90px;
+        }
+
+        .law-detail-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            border-right: 5px solid var(--primary);
+            padding-right: 1.2rem;
+        }
+
+        .law-detail-header i {
+            font-size: 2.5rem;
+        }
+
+        .law-detail-header h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+
+        .law-full-description {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #2d3e50;
+            background: #fefbf8;
+            padding: 1.5rem;
+            border-radius: 24px;
+            margin-bottom: 2rem;
+        }
+
+        /* قسم رفع الملفات */
+        .files-section {
+            background: #f8fafc;
+            border-radius: 24px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .files-section h4 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .upload-area {
+            border: 2px dashed var(--secondary);
+            border-radius: 20px;
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            background: #ffffff;
+            transition: var(--transition);
+        }
+
+        .upload-area:hover {
+            border-color: var(--primary);
+            background: #fefaf5;
+        }
+
+        .upload-area input {
+            display: none;
+        }
+
+        .upload-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .upload-label:hover {
+            background: var(--primary-dark);
+        }
+
+        .files-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .files-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem;
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 0.5rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .files-list li .file-info {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .files-list li .file-info i {
+            font-size: 1.4rem;
+            color: var(--primary);
+        }
+
+        .file-actions a {
+            color: var(--primary);
+            text-decoration: none;
+            margin-right: 1rem;
+            font-weight: 600;
+        }
+
+        .file-actions a:hover {
+            color: var(--primary-dark);
+        }
+
+        .delete-file {
+            background: none;
+            border: none;
+            color: #ef4444;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
         footer {
             background: #0f172a;
             color: #cbd5e1;
             text-align: center;
             padding: 2rem;
         }
+
         @media (max-width: 768px) {
             .navbar { flex-direction: column; }
             .hero-grid { flex-direction: column-reverse; text-align: center; }
-            .rect-icon-card { min-width: 110px; padding: 0.5rem 1rem; flex-direction: column; gap: 0.3rem; border-radius: 28px; }
-            .law-detail-header h2 { font-size: 1.4rem; }
+            .rect-icon-card { min-width: 110px; flex-direction: column; gap: 0.3rem; border-radius: 28px; }
+            .laws-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -314,7 +433,7 @@
             <div class="hero-content">
                 <div class="badge"><i class="fas fa-gavel"></i> ثقة وخبرة قانونية</div>
                 <h1>المحامي <span>رعد ريبان</span> <br>دفاع متكامل وفق القانون اليمني</h1>
-                <p>نضع بين يديك أحدث التشريعات، اضغط على أي قانون لقراءة نصوصه التفصيلية وأحكامه.</p>
+                <p>رفع الكتب والملفات القانونية لكل قسم، وتحميلها بكل سهولة.</p>
                 <a href="#laws-directory" class="btn-consult" style="display:inline-block;">استعرض القوانين <i class="fas fa-arrow-down"></i></a>
             </div>
             <div style="flex:0.6; text-align:center;">
@@ -323,28 +442,28 @@
         </div>
     </section>
 
-    <!-- أيقونات مستطيلة سريعة (صفوف) -->
+    <!-- أيقونات مستطيلة سريعة -->
     <div class="icons-section">
         <div class="container">
             <div class="section-mini-title">
-                <h3><i class="fas fa-balance-scale"></i>  أبرز القوانين اليمنية</h3>
+                <h3><i class="fas fa-balance-scale"></i> أبرز القوانين اليمنية</h3>
             </div>
             <div class="rect-icons-grid" id="rectIconsGrid"></div>
         </div>
     </div>
 
-    <!-- دليل القوانين العام + أقسام تفصيلية منفصلة -->
+    <!-- دليل القوانين العام -->
     <section id="laws-directory">
         <div class="container">
             <div class="section-mini-title">
                 <h3>موسوعة القوانين اليمنية</h3>
-                <p>اختر القانون من القائمة أو اضغط على البطاقة لقراءة النص الكامل</p>
+                <p>اختر القانون لقراءة التفاصيل ورفع الملفات والكتب الخاصة به</p>
             </div>
             <div class="laws-grid" id="lawsGrid"></div>
         </div>
     </section>
 
-    <!-- هنا سيتم إضافة أقسام تفصيلية لكل قانون عند الضغط (ديناميكي) -->
+    <!-- سيتم إضافة أقسام تفصيلية لكل قانون مع رفع الملفات -->
     <div id="law-details-container"></div>
 
     <section id="contact" style="background:#fefaf5; margin-top: 1rem;">
@@ -371,40 +490,77 @@
 </main>
 
 <footer>
-    <p>© 2026 المحامي رعد ريبان — جميع الحقوق محفوظة. كل قسم قانوني مستقل بتفاصيل كاملة.</p>
+    <p>© 2026 المحامي رعد ريبان — رفع الكتب والملفات القانونية لكل قسم على حدة</p>
 </footer>
 
 <script>
     // بيانات القوانين الكاملة
     const lawsData = [
-        { name: "دستور الجمهورية اليمنية", desc: "الوثيقة الأساسية التي تحدد النظام السياسي والاقتصادي والاجتماعي، وتكفل الحقوق والحريات العامة، وهو أعلى قانون نافذ في البلاد. يتضمن الدستور اليمني ١٥٩ مادة ويعد المرجع الأعلى لكافة القوانين.", fullDetail: "دستور اليمن يتكون من بابين: أساس النظام السياسي والحقوق والحريات، والسلطات العامة. تم تعديله في ٢٠٠١ و٢٠٠٩. ينص على مبدأ الفصل بين السلطات والتعددية السياسية." },
-        { name: "القانون المدني", desc: "ينظم العلاقات الخاصة بين الأفراد، كالعقود والالتزامات وحقوق الملكية والتعويضات، وهو مرجع أساسي للمعاملات المدنية والمالية.", fullDetail: "القانون المدني اليمني رقم ١٩ لسنة ١٩٩٢ ويشمل الأحكام العامة، الالتزامات، العقود المسماة، والملكية. يتكون من ١٢٩٩ مادة تغطي كل ما يتعلق بالمعاملات المالية والمدنية." },
-        { name: "قانون المرافعات والتنفيذ المدني", desc: "يحدد إجراءات التقاضي أمام المحاكم المدنية، وآليات رفع الدعاوى، والتنفيذ الجبري للأحكام.", fullDetail: "قانون رقم ٤٠ لسنة ٢٠٠٢ بشأن المرافعات المدنية، ينظم سير الدعوى من رفعها إلى الفصل فيها وطرق الطعن والتنفيذ." },
-        { name: "قانون الأحوال الشخصية", desc: "يشمل أحكام الزواج والطلاق والميراث والنفقة والحضانة والوصية، ويهتم بكل ما يتعلق بالأسرة اليمنية.", fullDetail: "صدر القانون رقم ٢٠ لسنة ١٩٩٢، ويستند إلى الشريعة الإسلامية. يحدد شروط الزواج، حقوق الزوجين، الطلاق، والميراث وفق أحكام الفقه الإسلامي." },
-        { name: "قانون الجرائم والعقوبات", desc: "يُعنى بتجريم الأفعال المخالفة للقانون وتحديد العقوبات الجنائية كالسجن والغرامة، والإجراءات الجزائية العامة.", fullDetail: "القانون رقم ١٢ لسنة ١٩٩٤ بشأن الجرائم والعقوبات، يتناول الجرائم الحدية والقصاص والتعزير، والعقوبات السالبة للحرية والغرامات." },
-        { name: "قانون الإجراءات الجزائية", desc: "ينظم سير الدعوى الجزائية من التحقيق والمحاكمة والطعن، ويضمن حقوق المتهم والمجني عليه.", fullDetail: "هذا القانون (رقم ١٣ لسنة ١٩٩٤) يضمن حماية حقوق الإنسان أثناء التحقيق والمحاكمة، ويحدد أدوار النيابة العامة والشرطة القضائية." },
-        { name: "قانون الإثبات", desc: "يحدد وسائل الإثبات المقبولة أمام القضاء كالكتابة والشهادة والقرائن، وكيفية إدارة الأدلة.", fullDetail: "قانون الإثبات اليمني رقم ٢١ لسنة ١٩٩٢، ينظم الإثبات في المواد المدنية والتجارية، ويشمل البينة الخطية وشهادة الشهود والخبرة." },
-        { name: "قانون التحكيم وتعديلاته", desc: "ينظم التحكيم كوسيلة بديلة لحل النزاعات التجارية والمدنية خارج المحاكم، مع أحدث التعديلات.", fullDetail: "صدر القانون رقم ٣٣ لسنة ١٩٩٧ وتعديلاته ٢٠٢٠، يتيح التحكيم الاختياري والإلزامي في عقود الاستثمار والشركات." },
-        { name: "القانون التجاري", desc: "يشمل الأعمال التجارية، والشركات التجارية، والأوراق التجارية، والإفلاس، والعلامات التجارية.", fullDetail: "القانون التجاري اليمني رقم ٣٢ لسنة ١٩٩١، ويعرف التاجر والأعمال التجارية، أحكام الشركات التجارية، الكمبيالات، والإفلاس." },
-        { name: "قانون العمل", desc: "ينظم علاقات العمل بين العامل وصاحب العمل، ويحدد الحقوق والواجبات والأجور والإجازات وسلامة العمل.", fullDetail: "القانون رقم ٥ لسنة ١٩٩٥ بشأن العمل، يحدد ساعات العمل، الأجور، الإجازات، عقود العمل، وتعويضات إصابات العمل." }
+        { name: "دستور الجمهورية اليمنية", desc: "الوثيقة الأساسية التي تحدد النظام السياسي والاقتصادي والاجتماعي، وتكفل الحقوق والحريات العامة.", fullDetail: "دستور اليمن يتكون من بابين: أساس النظام السياسي والحقوق والحريات، والسلطات العامة. تم تعديله في ٢٠٠١ و٢٠٠٩." },
+        { name: "القانون المدني", desc: "ينظم العلاقات الخاصة بين الأفراد، كالعقود والالتزامات وحقوق الملكية.", fullDetail: "القانون المدني اليمني رقم ١٩ لسنة ١٩٩٢ ويشمل الأحكام العامة، الالتزامات، العقود المسماة." },
+        { name: "قانون المرافعات والتنفيذ المدني", desc: "يحدد إجراءات التقاضي أمام المحاكم المدنية وآليات التنفيذ.", fullDetail: "قانون رقم ٤٠ لسنة ٢٠٠٢ بشأن المرافعات المدنية." },
+        { name: "قانون الأحوال الشخصية", desc: "يشمل أحكام الزواج والطلاق والميراث والنفقة والحضانة.", fullDetail: "صدر القانون رقم ٢٠ لسنة ١٩٩٢، ويستند إلى الشريعة الإسلامية." },
+        { name: "قانون الجرائم والعقوبات", desc: "يُعنى بتجريم الأفعال المخالفة للقانون وتحديد العقوبات.", fullDetail: "القانون رقم ١٢ لسنة ١٩٩٤ بشأن الجرائم والعقوبات." },
+        { name: "قانون الإجراءات الجزائية", desc: "ينظم سير الدعوى الجزائية من التحقيق والمحاكمة.", fullDetail: "القانون رقم ١٣ لسنة ١٩٩٤ يضمن حماية حقوق الإنسان أثناء التحقيق." },
+        { name: "قانون الإثبات", desc: "يحدد وسائل الإثبات المقبولة أمام القضاء.", fullDetail: "قانون الإثبات اليمني رقم ٢١ لسنة ١٩٩٢." },
+        { name: "قانون التحكيم وتعديلاته", desc: "ينظم التحكيم كوسيلة بديلة لحل النزاعات.", fullDetail: "القانون رقم ٣٣ لسنة ١٩٩٧ وتعديلاته ٢٠٢٠." },
+        { name: "القانون التجاري", desc: "يشمل الأعمال التجارية والشركات والأوراق التجارية.", fullDetail: "القانون التجاري اليمني رقم ٣٢ لسنة ١٩٩١." },
+        { name: "قانون العمل", desc: "ينظم علاقات العمل بين العامل وصاحب العمل.", fullDetail: "القانون رقم ٥ لسنة ١٩٩٥ بشأن العمل." }
     ];
 
     const iconsList = ["fas fa-landmark","fas fa-file-contract","fas fa-gavel","fas fa-heart","fas fa-skull","fas fa-balance-scale","fas fa-file-signature","fas fa-handshake","fas fa-chart-line","fas fa-briefcase"];
     const colorsList = ["#8b2c1d","#2c6e2f","#1e4a76","#b4682d","#9c2e5f","#3b7c5e","#a15e2b","#4b5e7c","#b2472e","#5f5b8b"];
 
-    // إنشاء الأيقونات المستطيلة
+    // تخزين الملفات لكل قانون (key: اسم القانون, value: array من الملفات)
+    let lawFiles = {};
+    lawsData.forEach(law => { lawFiles[law.name] = []; });
+
+    // تحميل الملفات المخزنة محلياً
+    function loadStoredFiles() {
+        const stored = localStorage.getItem('lawFilesStorage');
+        if(stored) {
+            lawFiles = JSON.parse(stored);
+        } else {
+            // إضافة بعض الملفات تجريبية
+            lawFiles["دستور الجمهورية اليمنية"] = [{ name: "الدستور_اليمني.pdf", url: "#", type: "pdf" }];
+        }
+    }
+    function saveFilesToLocal() {
+        localStorage.setItem('lawFilesStorage', JSON.stringify(lawFiles));
+    }
+
+    // إنشاء أيقونات مستطيلة
     const rectGrid = document.getElementById('rectIconsGrid');
     const detailsContainer = document.getElementById('law-details-container');
 
-    // دالة عرض قسم تفصيلي لقانون معين (مستقل)
+    // دالة عرض قسم تفصيلي مع رفع الملفات
     function renderLawDetailSection(law, index) {
-        // مسح أي قسم تفصيلي موجود سابقاً ثم إضافة القسم الجديد
         detailsContainer.innerHTML = '';
         const sectionDiv = document.createElement('section');
         sectionDiv.className = 'law-detail-section';
         sectionDiv.id = `law-detail-${index}`;
         sectionDiv.style.scrollMarginTop = '80px';
         const lawColor = colorsList[index % colorsList.length];
+        const lawName = law.name;
+        
+        // بناء قائمة الملفات لهذا القانون
+        function renderFilesList() {
+            const files = lawFiles[lawName] || [];
+            const listHtml = files.map((file, idx) => `
+                <li>
+                    <div class="file-info">
+                        <i class="${file.type === 'pdf' ? 'fas fa-file-pdf' : 'fas fa-file-word'}"></i>
+                        <span>${file.name}</span>
+                    </div>
+                    <div class="file-actions">
+                        <a href="${file.url}" download="${file.name}" target="_blank"><i class="fas fa-download"></i> تحميل</a>
+                        <button class="delete-file" data-file-index="${idx}"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </li>
+            `).join('');
+            return listHtml || '<li style="color:#94a3b8;">لا توجد ملفات مرفوعة بعد</li>';
+        }
+
         sectionDiv.innerHTML = `
             <div class="container">
                 <div class="law-detail-header">
@@ -413,32 +569,88 @@
                 </div>
                 <div class="law-full-description">
                     <p><strong>📜 نبذة شاملة:</strong> ${law.desc}</p>
-                    <p style="margin-top:1rem"><strong>⚖️ النص التفصيلي والحقوقي:</strong> ${law.fullDetail}</p>
-                    <p style="margin-top:1rem">يمكنكم التواصل مع المحامي رعد ريبان للحصول على استشارة قانونية دقيقة حول هذا القانون.</p>
+                    <p style="margin-top:1rem"><strong>⚖️ النص التفصيلي:</strong> ${law.fullDetail}</p>
                 </div>
+                
+                <!-- قسم رفع الملفات والكتب -->
+                <div class="files-section">
+                    <h4><i class="fas fa-upload"></i> رفع الكتب والملفات القانونية</h4>
+                    <div class="upload-area">
+                        <input type="file" id="fileInput-${index}" accept=".pdf,.doc,.docx,.jpg,.png" multiple>
+                        <label for="fileInput-${index}" class="upload-label">
+                            <i class="fas fa-cloud-upload-alt"></i> اختر ملفات (PDF, Word, صور)
+                        </label>
+                        <p style="margin-top:0.8rem; font-size:0.8rem; color:#64748b;">يمكنك رفع الكتب، المستندات، الشروحات القانونية</p>
+                    </div>
+                    
+                    <h4 style="margin-top:1rem;"><i class="fas fa-folder-open"></i> الملفات المرفوعة (${lawFiles[lawName]?.length || 0})</h4>
+                    <ul class="files-list" id="filesList-${index}">
+                        ${renderFilesList()}
+                    </ul>
+                </div>
+                
                 <a href="#laws-directory" class="back-to-top"><i class="fas fa-arrow-up"></i> العودة إلى قائمة القوانين</a>
             </div>
         `;
+        
         detailsContainer.appendChild(sectionDiv);
-        // تمرير سلس إلى القسم الجديد
+        
+        // ربط حدث رفع الملفات
+        const fileInput = document.getElementById(`fileInput-${index}`);
+        fileInput.addEventListener('change', (e) => {
+            const files = Array.from(e.target.files);
+            files.forEach(file => {
+                const reader = new FileReader();
+                reader.onload = function(evt) {
+                    const fileData = {
+                        name: file.name,
+                        url: evt.target.result,
+                        type: file.type.includes('pdf') ? 'pdf' : (file.type.includes('word') ? 'word' : 'other')
+                    };
+                    if (!lawFiles[lawName]) lawFiles[lawName] = [];
+                    lawFiles[lawName].push(fileData);
+                    saveFilesToLocal();
+                    // إعادة عرض القسم لتحديث قائمة الملفات
+                    renderLawDetailSection(law, index);
+                };
+                reader.readAsDataURL(file);
+            });
+            fileInput.value = '';
+        });
+        
+        // ربط أحداث حذف الملفات (بعد إضافة العناصر)
+        const filesContainer = document.getElementById(`filesList-${index}`);
+        if(filesContainer) {
+            // استخدام MutationObserver أو ربط الأحداث لاحقاً
+            setTimeout(() => {
+                document.querySelectorAll(`#filesList-${index} .delete-file`).forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const fileIdx = parseInt(btn.getAttribute('data-file-index'));
+                        if(!isNaN(fileIdx) && lawFiles[lawName]) {
+                            lawFiles[lawName].splice(fileIdx, 1);
+                            saveFilesToLocal();
+                            renderLawDetailSection(law, index);
+                        }
+                    });
+                });
+            }, 50);
+        }
+        
         setTimeout(() => {
             document.getElementById(`law-detail-${index}`).scrollIntoView({ behavior: 'smooth' });
         }, 100);
     }
 
-    // بناء الأيقونات العلوية (كل أيقونة توجه للقسم التفصيلي المستقل)
+    // بناء الأيقونات العلوية
     lawsData.forEach((law, idx) => {
         const rectCard = document.createElement('div');
         rectCard.className = 'rect-icon-card';
         rectCard.innerHTML = `<i class="${iconsList[idx % iconsList.length]}" style="color:${colorsList[idx % colorsList.length]}"></i><span>${law.name}</span>`;
-        rectCard.addEventListener('click', (e) => {
-            e.preventDefault();
-            renderLawDetailSection(law, idx);
-        });
+        rectCard.addEventListener('click', () => renderLawDetailSection(law, idx));
         rectGrid.appendChild(rectCard);
     });
 
-    // بناء بطاقات القوانين (الضغط عليها يوجه للقسم التفصيلي)
+    // بناء بطاقات القوانين
     const lawsGrid = document.getElementById('lawsGrid');
     lawsData.forEach((law, idx) => {
         const card = document.createElement('div');
@@ -446,20 +658,26 @@
         card.innerHTML = `
             <h3><i class="${iconsList[idx % iconsList.length]}" style="color:${colorsList[idx % colorsList.length]}"></i> ${law.name}</h3>
             <p>${law.desc.substring(0, 110)}...</p>
-            <div style="margin-top:1rem; border-top:1px solid #eee; padding-top:0.7rem; color:var(--primary); font-weight:500;">📖 اضغط لعرض النص الكامل للقانون <i class="fas fa-arrow-left"></i></div>
+            <div style="margin-top:1rem; border-top:1px solid #eee; padding-top:0.7rem; color:var(--primary); font-weight:500;">
+                📂 رفع الكتب والملفات <i class="fas fa-arrow-left"></i>
+            </div>
         `;
         card.addEventListener('click', () => renderLawDetailSection(law, idx));
         lawsGrid.appendChild(card);
     });
 
-    // معالجة نموذج الاتصال
+    // تحميل الملفات المخزنة
+    loadStoredFiles();
+    saveFilesToLocal();
+
+    // نموذج الاتصال
     document.getElementById('contactForm').addEventListener('submit', (e) => {
         e.preventDefault();
         alert('شكراً لتواصلك مع المحامي رعد ريبان، سيتم الرد عليكم قريباً.');
         e.target.reset();
     });
 
-    // روابط التنقل السلسة
+    // التنقل السلس
     document.querySelectorAll('.nav-links a, .btn-consult[href^="#"]').forEach(link => {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
