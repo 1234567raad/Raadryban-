@@ -1,45 +1,186 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>أقسام القوانين اليمنية</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; background-color: #f4f4f4; }
-        header { background: #2c3e50; color: #fff; padding: 1rem; text-align: center; }
-        nav { margin: 20px 0; }
-        nav a { margin: 0 10px; text-decoration: none; color: #2c3e50; font-weight: bold; }
-        section { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المحامي رعد ريبان</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Tahoma, Arial, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+}
+
+header{
+    background:#0f2740;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:20px;
+    color:#d4af37;
+}
+
+nav{
+    background:#183b5c;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    padding:10px 15px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#d4af37;
+    color:#000;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section{
+    background:white;
+    margin:20px 0;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.section h2{
+    color:#0f2740;
+    margin-bottom:15px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f8f9fa;
+    padding:20px;
+    border-radius:8px;
+    border-right:5px solid #d4af37;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#0f2740;
+}
+
+footer{
+    background:#0f2740;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>الموسوعة القانونية اليمنية</h1>
-    </header>
+<header>
+    <h1>المحامي رعد ريبان</h1>
+    <p>محامٍ ومستشار قانوني</p>
+</header>
 
-    <nav>
-    <ul style="list-style: none; padding: 0;">
-        <li><a href="dustour.html">دستور الجمهورية اليمنية</a></li>
-        <li><a href="civil.html">القانون المدني</a></li>
-        <li><a href="murafaat.html">قانون المرافعات والتنفيذ المدني</a></li>
-        <li><a href="personal.html">قانون الأحوال الشخصية</a></li>
-        <li><a href="penal.html">قانون الجرائم والعقوبات</a></li>
-        <li><a href="ijraat.html">قانون الإجراءات الجزائية</a></li>
-        <li><a href="ithbat.html">قانون الإثبات</a></li>
-        <li><a href="tahkeem.html">قانون التحكيم وتعديلاته</a></li>
-        <li><a href="tijari.html">القانون التجاري</a></li>
-        <li><a href="amal.html">قانون العمل</a></li>
-    </ul>
+<nav>
+    <a href="#about">نبذة عني</a>
+    <a href="#services">الخدمات</a>
+    <a href="#laws">القوانين</a>
+    <a href="#contact">التواصل</a>
 </nav>
 
+<div class="container">
 
-</body> <style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
-    header { background: #1a2a3a; color: #ffffff; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    nav { background: #e0e0e0; padding: 10px; text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; color: #1a2a3a; font-weight: bold; }
-    section { max-width: 800px; margin: 20px auto; background: #fff; padding: 25px; border-radius: 5px; border-right: 5px solid #1a2a3a; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-    h2 { color: #1a2a3a; border-bottom: 2px solid #1a2a3a; display: inline-block; }
-</style>
+<section class="section" id="about">
+    <h2>نبذة عن المحامي</h2>
+    <p>
+        يقدم المحامي رعد ريبان خدمات قانونية متكاملة تشمل الاستشارات القانونية
+        والترافع أمام المحاكم وصياغة العقود ومتابعة القضايا المدنية والتجارية والجزائية.
+    </p>
+</section>
 
-</html>
+<section class="section" id="services">
+    <h2>الخدمات القانونية</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>الاستشارات القانونية</h3>
+            <p>تقديم المشورة القانونية للأفراد والشركات.</p>
+        </div>
+
+        <div class="card">
+            <h3>صياغة العقود</h3>
+            <p>إعداد ومراجعة العقود والاتفاقيات.</p>
+        </div>
+
+        <div class="card">
+            <h3>القضايا المدنية</h3>
+            <p>متابعة الدعاوى المدنية أمام المحاكم.</p>
+        </div>
+
+        <div class="card">
+            <h3>القضايا التجارية</h3>
+            <p>تمثيل الشركات وحل النزاعات التجارية.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="laws">
+    <h2>القوانين اليمنية</h2>
+
+    <ul>
+        <li>دستور الجمهورية اليمنية</li>
+        <li>القانون المدني</li>
+        <li>القانون التجاري</li>
+        <li>قانون العمل</li>
+        <li>قانون الأحوال الشخصية</li>
+        <li>قانون الجرائم والعقوبات</li>
+        <li>قانون الإجراءات الجزائية</li>
+        <li>قانون الإثبات</li>
+        <li>قانون التحكيم</li>
+    </ul>
+</section>
+
+<section class="section" id="contact">
+    <h2>التواصل</h2>
+    <p>البريد الإلكتروني: info@example.com</p>
+    <p>الهاتف: +967 XX XXX XXXX</p>
+</section>
+
+</div>
+
+<footer>
+    © جميع الحقوق محفوظة | المحامي رعد ريبان
+</footer>
+
+</body>
+                                     </html>
