@@ -21,7 +21,6 @@
             background: #f8fafc;
         }
 
-        /* Navbar */
         nav {
             background: var(--primary);
             position: fixed;
@@ -39,11 +38,7 @@
             justify-content: space-between;
             align-items: center;
         }
-        .logo {
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
+        .logo { color: white; font-size: 24px; font-weight: bold; }
         .nav-links a {
             color: white;
             text-decoration: none;
@@ -51,22 +46,14 @@
             font-weight: 500;
         }
 
-        /* Hero */
         header {
             background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.9)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
             color: white;
             text-align: center;
             padding: 180px 20px 100px;
         }
-        header h1 {
-            font-size: 52px;
-            margin-bottom: 15px;
-        }
-        header p {
-            font-size: 22px;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
+        header h1 { font-size: 52px; margin-bottom: 15px; }
+        header p { font-size: 22px; max-width: 700px; margin: 0 auto 30px; }
 
         .btn {
             display: inline-block;
@@ -77,81 +64,49 @@
             margin: 8px;
             transition: all 0.3s;
         }
-        .btn-whatsapp {
-            background: #25D366;
-            color: white;
-        }
-        .btn-call {
-            background: var(--accent);
-            color: black;
-        }
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
+        .btn-whatsapp { background: #25D366; color: white; }
+        .btn-call { background: var(--accent); color: black; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
 
-        section {
-            max-width: 1200px;
-            margin: auto;
-            padding: 80px 20px;
-        }
+        section { max-width: 1200px; margin: auto; padding: 80px 20px; }
+        h2 { text-align: center; font-size: 36px; margin-bottom: 50px; color: var(--primary); }
 
-        h2 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 50px;
-            color: var(--primary);
-        }
-
-        /* Cards */
-        .cards {
+        /* Law Cards */
+        .laws-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 25px;
         }
-        .card {
+        .law-card {
             background: white;
-            padding: 35px 25px;
+            padding: 30px 25px;
             border-radius: 16px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            text-align: center;
             transition: all 0.3s;
+            text-align: center;
         }
-        .card:hover {
+        .law-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
-        .card i {
-            font-size: 48px;
+        .law-card i {
+            font-size: 42px;
             color: var(--accent);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
-
-        /* Contact Form */
-        .contact-form {
-            max-width: 700px;
-            margin: 40px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        .law-card h3 {
+            margin: 15px 0;
+            color: var(--primary);
         }
-        input, textarea {
-            width: 100%;
-            padding: 14px;
-            margin: 12px 0;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-family: inherit;
-        }
-        button {
+        .download-btn {
             background: var(--primary);
             color: white;
-            border: none;
-            padding: 14px 40px;
+            padding: 10px 25px;
             border-radius: 50px;
-            font-size: 18px;
-            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
         }
 
         footer {
@@ -163,7 +118,6 @@
 
         @media (max-width: 768px) {
             header h1 { font-size: 38px; }
-            header p { font-size: 18px; }
         }
     </style>
 </head>
@@ -176,7 +130,7 @@
             <div class="nav-links">
                 <a href="#">الرئيسية</a>
                 <a href="#services">الخدمات</a>
-                <a href="#about">عن المحامي</a>
+                <a href="#laws">القوانين</a>
                 <a href="#contact">اتصل بنا</a>
             </div>
         </div>
@@ -186,74 +140,97 @@
     <header>
         <h1>المحامي رعد ربيان</h1>
         <p>استشارات قانونية متخصصة | تمثيل قضائي | صياغة عقود</p>
-        
-        <a href="https://wa.me/967774754573" class="btn btn-whatsapp" target="_blank">
-            <i class="fab fa-whatsapp"></i> واتساب الآن
-        </a>
-        <a href="tel:+967774754573" class="btn btn-call">
-            <i class="fas fa-phone"></i> اتصال مباشر
-        </a>
+        <a href="https://wa.me/967774754573" class="btn btn-whatsapp" target="_blank">واتساب الآن</a>
+        <a href="tel:+967774754573" class="btn btn-call">اتصال مباشر</a>
     </header>
-
-    <!-- About -->
-    <section id="about">
-        <h2>نبذة عن المحامي</h2>
-        <p style="text-align:center; font-size:19px; max-width:800px; margin:auto;">
-            نقدم خدمات قانونية متكاملة باحترافية عالية وسرية تامة، مع خبرة واسعة في مختلف القضايا المدنية والتجارية والأحوال الشخصية. 
-            هدفنا هو حماية حقوقك وتحقيق أفضل النتائج.
-        </p>
-    </section>
 
     <!-- Services -->
     <section id="services" style="background:#f1f5f9;">
         <h2>خدماتنا القانونية</h2>
-        <div class="cards">
-            <div class="card">
+        <div class="laws-grid"> <!-- نفس الـ grid السابق -->
+            <div class="law-card">
                 <i class="fas fa-balance-scale"></i>
                 <h3>الاستشارات القانونية</h3>
-                <p>استشارات متخصصة ودقيقة للأفراد والشركات.</p>
+                <p>استشارات متخصصة للأفراد والشركات.</p>
             </div>
-            <div class="card">
+            <div class="law-card">
                 <i class="fas fa-gavel"></i>
                 <h3>القضايا المدنية</h3>
-                <p>متابعة الدعاوى والمنازعات المدنية بكفاءة.</p>
+                <p>متابعة الدعاوى المدنية.</p>
             </div>
-            <div class="card">
+            <div class="law-card">
                 <i class="fas fa-handshake"></i>
                 <h3>القضايا التجارية</h3>
-                <p>صياغة العقود وحل النزاعات التجارية.</p>
+                <p>صياغة العقود والنزاعات التجارية.</p>
             </div>
-            <div class="card">
+            <div class="law-card">
                 <i class="fas fa-family"></i>
                 <h3>الأحوال الشخصية</h3>
-                <p>قضايا الطلاق والمواريث والحضانة والوصايا.</p>
+                <p>قضايا الطلاق والمواريث.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- مكتبة القوانين - القسم الجديد -->
+    <section id="laws">
+        <h2>مكتبة القوانين والأنظمة</h2>
+        <p style="text-align:center; margin-bottom:40px; font-size:19px;">
+            يمكنك تحميل النصوص القانونية والأنظمة المهمة بصيغة PDF
+        </p>
+        
+        <div class="laws-grid">
+
+            <!-- مثال 1 - غيّر المعلومات حسب الحاجة -->
+            <div class="law-card">
+                <i class="fas fa-file-pdf"></i>
+                <h3>نظام العقوبات اليمني</h3>
+                <p>القانون رقم (12) لسنة 1994</p>
+                <a href="قانون-العقوبات.pdf" class="download-btn" target="_blank">
+                    <i class="fas fa-download"></i> تحميل PDF
+                </a>
+            </div>
+
+            <!-- مثال 2 -->
+            <div class="law-card">
+                <i class="fas fa-file-pdf"></i>
+                <h3>نظام المرافعات المدنية</h3>
+                <p>القانون رقم (40) لسنة 2002</p>
+                <a href="مرافعات-مدنية.pdf" class="download-btn" target="_blank">
+                    <i class="fas fa-download"></i> تحميل PDF
+                </a>
+            </div>
+
+            <!-- مثال 3 -->
+            <div class="law-card">
+                <i class="fas fa-file-pdf"></i>
+                <h3>قانون الأحوال الشخصية</h3>
+                <p>القانون رقم (20) لسنة 1992</p>
+                <a href="احوال-شخصية.pdf" class="download-btn" target="_blank">
+                    <i class="fas fa-download"></i> تحميل PDF
+                </a>
+            </div>
+
+            <!-- أضف المزيد هنا بنفس الطريقة -->
+            
         </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
         <h2>تواصل معنا</h2>
-        <div class="contact-form">
+        <div style="max-width:700px; margin:40px auto; background:white; padding:40px; border-radius:16px; box-shadow:0 5px 25px rgba(0,0,0,0.1);">
             <form>
-                <input type="text" placeholder="الاسم الكامل" required>
-                <input type="tel" placeholder="رقم الجوال" required>
-                <input type="email" placeholder="البريد الإلكتروني">
-                <textarea rows="5" placeholder="تفاصيل الاستشارة أو الطلب..." required></textarea>
-                <button type="submit">إرسال الطلب</button>
+                <input type="text" placeholder="الاسم الكامل" required style="width:100%; padding:14px; margin:12px 0; border:1px solid #ddd; border-radius:8px;">
+                <input type="tel" placeholder="رقم الجوال" required style="width:100%; padding:14px; margin:12px 0; border:1px solid #ddd; border-radius:8px;">
+                <textarea rows="5" placeholder="تفاصيل طلبك..." required style="width:100%; padding:14px; margin:12px 0; border:1px solid #ddd; border-radius:8px;"></textarea>
+                <button type="submit" style="background:var(--primary); color:white; border:none; padding:14px 40px; border-radius:50px; font-size:18px;">إرسال</button>
             </form>
         </div>
-
-        <p style="text-align:center; margin-top:30px;">
-            <strong>الهاتف:</strong> +967 774 754 573<br>
-            <strong>البريد:</strong> Rybanabwjwad@gmail.com<br>
-            <strong>الموقع:</strong> اليمن
-        </p>
     </section>
 
     <footer>
-        <p>&copy; 2026 جميع الحقوق محفوظة للمحامي رعد ربيان</p>
+        <p>© 2026 جميع الحقوق محفوظة للمحامي رعد ربيان</p>
     </footer>
 
 </body>
-                  </html>
+    </html>
